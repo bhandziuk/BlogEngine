@@ -1,0 +1,21 @@
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.XML
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.pdb
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\AjaxMin.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\BlogML.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\Dynamic.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Debug\NuGet.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.pdb
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.XML
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.pdb
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\AjaxMin.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\BlogML.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\Dynamic.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\NuGet.Core.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.csprojResolveAssemblyReference.cache
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.dll
+J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.pdb

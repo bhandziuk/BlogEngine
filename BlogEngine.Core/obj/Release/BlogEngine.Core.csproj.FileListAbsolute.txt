@@ -1,0 +1,13 @@
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogEngine.Core.XML
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogEngine.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogEngine.Core.pdb
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogEngine.Core.dll.CodeAnalysisLog.xml
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogEngine.Core.dll.lastcodeanalysissucceeded
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\AjaxMin.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\BlogML.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\Dynamic.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\bin\Release\NuGet.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\obj\Release\BlogEngine.Core.csprojResolveAssemblyReference.cache
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\obj\Release\BlogEngine.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Core\obj\Release\BlogEngine.Core.pdb

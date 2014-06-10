@@ -1,0 +1,10 @@
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\BlogEngine.Tests.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\BlogEngine.Tests.pdb
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\Interop.SHDocVw.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\nunit.framework.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\WatiN.Core.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\nunit.framework.xml
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\bin\Debug\WatiN.Core.xml
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\obj\Debug\BlogEngine.Tests.csprojResolveAssemblyReference.cache
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\obj\Debug\BlogEngine.Tests.dll
+C:\rtur\src\Codeplex\be\BlogEngine\BlogEngine.Tests\obj\Debug\BlogEngine.Tests.pdb

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>Admin</author>
+  <title>Welcome to BlogEngine.NET 2.9</title>
+  <description>The description is used as the meta description as well as shown in the related posts. It is recommended that you write a description, but not mandatory</description>
+  <content>&lt;br&gt;I always need to write up a little procedure to handle passing in values in the OpenArgs paramater of DoCmd.OpenReport or  &lt;code class="brush: vb"&gt;DoCmd.OpenForm&lt;/code&gt;. Well no more! I am liking this style. I's kind of JSONy. Given a string formatted like&lt;br&gt;&lt;br&gt;
+&lt;pre class="brush: vb"&gt;&amp;lt;name of="" control=""&amp;gt;|&amp;lt;value for="" that="" control=""&amp;gt;||&amp;lt;another control="" name=""&amp;gt;|&amp;lt;value for="" that="" control=""&amp;gt;...&amp;lt;/value&amp;gt;&amp;lt;/another&amp;gt;&lt;/pre&gt;
+&lt;br&gt;it will put the values in the right place.&lt;br&gt;&lt;br&gt;&lt;pre class="brush: vb"&gt;Function PopulateWithOpenArgs(ctrls As Controls, OArgs As String) As Dictionary&lt;br&gt;    Dim controlValues As New Dictionary&lt;br&gt;    Dim controlsValuesArr() As String, i As Integer&lt;br&gt;    Dim ctrlValPair() As String&lt;br&gt;    controlsValuesArr = Split(OArgs, "||")&lt;br&gt;    On Error Resume Next&lt;br&gt;    For i = LBound(controlsValuesArr) To UBound(controlsValuesArr)&lt;br&gt;        ctrlValPair = Split(controlsValuesArr(i), "|")&lt;br&gt;        If UBound(ctrlValPair) &amp;gt;= 1 Then&lt;br&gt;            controlValues.Add ctrlValPair(0), ctrlValPair(1)&lt;br&gt;        End If&lt;br&gt;    Next i&lt;br&gt;   &lt;br&gt;    Dim ctrlName&lt;br&gt;    For Each ctrlName In controlValues.Keys&lt;br&gt;        ctrls(ctrlName) = controlValues(ctrlName)&lt;br&gt;    Next ctrlName&lt;br&gt;    &lt;br&gt;    Set PopulateWithOpenArgs = controlValues&lt;br&gt;    &lt;br&gt;End Function&lt;/pre&gt;So, for example, if I have a form, Frm_ReportOpenOptions, which is responsible for gathering some data from a user before a report is generated and on that form I have two textboxestxtSubmitterNameInput and txtDateSubmittedInput, after they enter their values, I can create a pipe and double-pipe delimited string of those value and the destination control names on the report or form.&lt;br&gt;&lt;pre class="brush: vb"&gt;Dim rptOpenArgs As String&lt;br&gt;Dim whereClause As String&lt;br&gt;rptOpenArgs = "txtDateSubmitted|" &amp;amp; txtDateSubmittedInput &amp;amp; "||txtSubmitterName|" &amp;amp; txtSubmitterNameInput&lt;br&gt;whereClause = set to whatever value...&lt;br&gt;DoCmd.OpenReport "Rpt_MonthlyPayments", acViewPreview, , whereClause, OpenArgs:=rptOpenArgs&lt;/pre&gt;Then in the Load event I just need to call&lt;br&gt;&lt;pre class="brush: vb"&gt;Private Sub Report_Load()&lt;br&gt;    PopulateWithOpenArgs Me.Controls, Me.OpenArgs&lt;br&gt;End Sub&lt;/pre&gt;And the controls are automagically populated. This works well for reports that have a field that needs to be set once, like in the header section. Otherwise, more complicated controls in detail sections might need to get set in a Format event. Reports also cannot have their values changed once they are formatted. So, while a form can be opened via DoCmd.OpenForm then have properties set via Form("Name of form").Property a report canot do that.&lt;br&gt;&lt;br&gt;Got any better ways of passing in an arbitrary number of OpenArgs parameters?&lt;br&gt;&amp;nbsp; &amp;nbsp;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>2013-12-28 10:00:00</pubDate>
+  <lastModified>2014-05-23 06:49:55</lastModified>
+  <raters>5</raters>
+  <rating>4.24</rating>
+  <slug>Welcome-to-BlogEngineNET-29</slug>
+  <tags>
+    <tag>blog</tag>
+    <tag>welcome</tag>
+  </tags>
+  <comments>
+    <comment id="82c3783e-5ea4-4a6e-b5b2-55d53da0a6c6" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-01-03 17:58:00</date>
+      <author>Visitor 1</author>
+      <email>one@example.com</email>
+      <country>be</country>
+      <ip>127.0.0.1</ip>
+      <content>comment 1</content>
+    </comment>
+    <comment id="20574909-b777-4246-9b15-d70a3a795fcc" parentid="00000000-0000-0000-0000-000000000000" approved="True" spam="False" deleted="False">
+      <date>2012-01-15 17:01:59</date>
+      <author>Visitor 2</author>
+      <email>two@example.com</email>
+      <country />
+      <ip>127.0.0.1</ip>
+      <content>comment 2</content>
+    </comment>
+    <comment id="72484d70-ac56-4753-b4c1-7d34ee11e7d6" parentid="82c3783e-5ea4-4a6e-b5b2-55d53da0a6c6" approved="True" spam="False" deleted="False">
+      <date>2012-01-15 17:02:13</date>
+      <author>Admin</author>
+      <email>post@example.com</email>
+      <country />
+      <ip>127.0.0.1</ip>
+      <content>comment 3</content>
+    </comment>
+  </comments>
+  <categories>
+    <category>19770e74-9ec9-4cde-b2ab-e5051aaaf348</category>
+  </categories>
+  <notifications />
+</post>
