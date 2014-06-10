@@ -45,13 +45,47 @@
             <div class="slides-wrapper slider-[CUSTOMFIELD|THEME|JustBlog|Show Slider(Yes or No)?|yes/]">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="0">
                     <!-- Indicators -->
+                     <% var files = FileSlideSets(Server.MapPath(@"~\themes\JustBlog\Slides"));%>
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <%for (int i = 0; i < files.Count(); i++)
+                            {
+                                if (i==0)
+                                {%>
+                                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>  
+                                <%}
+                                  else{%>
+                                    <li data-target="#carousel-example-generic" data-slide-to="<%=i%>"></li>
+                                <%}%>
+                        <%} %>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
+                       
+                          <%  var fi = 0; 
+                              foreach (var fileSet in files)
+                            {%>
+                                 <% var preview = fileSet.FirstOrDefault(f => !f.Contains("-Lg"));
+                                    var fullSize = fileSet.FirstOrDefault(f => f.Contains("-Lg"));
+                                    var fullSizePath = Page.ResolveUrl("~/themes/justblog/slides/") + fullSize;
+                                    var previewPath = Page.ResolveUrl("~/themes/justblog/slides/") + preview;%>
+                              <%if (fi ==0)
+                              { %>
+                                <div class="item active">
+                              <%}
+                              else
+                              {%>
+                                <div class="item">  
+                              <%}%>
+
+                                <a href="<%=fullSizePath%>" target="_blank">
+                                    <img src="<%=previewPath%>"  /></a>
+                                </div>
+                             <% fi++;
+                             }%>
+                         </div>   
+                          
+                          
+                    <!--
                         <div class="item active">
                             <a href="[CUSTOMFIELD|THEME|JustBlog|Slide 1 link address|#/]" target="_blank">
                                 <img src="[CUSTOMFIELD|THEME|JustBlog|Slide 1 image address|/themes/justblog/slides/Slide-1.Png/]" /></a>
@@ -65,6 +99,7 @@
                                 <img src="[CUSTOMFIELD|THEME|JustBlog|Slide 3 image address|/themes/justblog/slides/slide-3.png/]" /></a>
                         </div>
                     </div>
+                        -->
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>

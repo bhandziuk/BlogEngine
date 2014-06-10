@@ -1,13 +1,26 @@
 using System;
+using System.Linq;
 using System.Web.UI;
 using BlogEngine.Core;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
 
 public partial class JustBlog : System.Web.UI.MasterPage
 {
     private static Regex reg = new Regex(@"(?<=[^])\t{2,}|(?<=[>])\s{2,}(?=[<])|(?<=[>])\s{2,11}(?=[<])|(?=[\n])\s{2,}");
 
     protected static string ShRoot = Utils.ApplicationRelativeWebRoot + "editors/tiny_mce_3_5_8/plugins/syntaxhighlighter/";
+    protected static List<IGrouping<string,string>> FileSlideSets(string sildeFolder)
+    {
+        System.IO.DirectoryInfo directory = new System.IO.DirectoryInfo(sildeFolder);
+        Random rnd=new Random();
+        var files = directory.GetFiles()
+            .Where(f => f.Name != "Thumbs.db").Select(f => f.Name)
+            .GroupBy(g => g.Substring(0, "slide-##".Length))
+            .OrderBy(o => rnd.Next())
+            .ToList();
+        return files;
+    }
 
     protected void Page_Load(object sender, EventArgs e)
     {
