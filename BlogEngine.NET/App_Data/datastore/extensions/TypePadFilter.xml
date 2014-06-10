@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TypePadFilter">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TypePadFilter">
   <AdminPage />
   <Author>&lt;a href="http://lucsiferre.net"&gt;By Chris Nicola&lt;/a&gt;</Author>
   <Description>TypePad anti-spam comment filter (based on AkismetFilter)</Description>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MediaElementPlayer">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="MediaElementPlayer">
   <AdminPage />
   <Author>&lt;a href="http://johndyer.me/"&gt;John Dyer&lt;/a&gt;</Author>
   <Description>HTML5 Video/Audio Player</Description>
   <Enabled>true</Enabled>
   <Priority>0</Priority>
-  <SubBlogEnabled>false</SubBlogEnabled>
+  <SubBlogEnabled>true</SubBlogEnabled>
   <Settings>
     <Delimiter>44</Delimiter>
     <Help>

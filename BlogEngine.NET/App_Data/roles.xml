@@ -3,12 +3,14 @@
   <role>
     <name>Administrators</name>
     <users>
-      <user>Admin</user>
+      <user>Bradley</user>
     </users>
   </role>
   <role>
     <name>Editors</name>
-    <users />
+    <users>
+      <user>Bradley</user>
+    </users>
   </role>
   <role>
     <name>Anonymous</name>

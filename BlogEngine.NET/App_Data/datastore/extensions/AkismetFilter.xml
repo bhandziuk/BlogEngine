@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AkismetFilter">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="AkismetFilter">
   <AdminPage />
   <Author>&lt;a href="http://dotnetblogengine.net"&gt;BlogEngine.NET&lt;/a&gt;</Author>
   <Description>Akismet anti-spam comment filter</Description>

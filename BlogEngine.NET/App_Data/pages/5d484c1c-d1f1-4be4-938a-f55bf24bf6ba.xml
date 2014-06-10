@@ -14,7 +14,7 @@ This is an example page.
   <isfrontpage>False</isfrontpage>
   <showinlist>True</showinlist>
   <ispublished>True</ispublished>
-  <isdeleted>False</isdeleted>
+  <isdeleted>True</isdeleted>
   <datecreated>2013-12-27 22:12:00</datecreated>
-  <datemodified>2013-12-27 22:03:47</datemodified>
+  <datemodified>2014-04-08 03:54:48</datemodified>
 </page>

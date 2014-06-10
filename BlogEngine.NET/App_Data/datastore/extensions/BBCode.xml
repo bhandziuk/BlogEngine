@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BBCode">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="BBCode">
   <AdminPage />
   <Author>&lt;a href="http://dotnetblogengine.net"&gt;BlogEngine.NET&lt;/a&gt;</Author>
   <Description>Converts BBCode to XHTML in the comments</Description>
   <Enabled>true</Enabled>
   <Priority>0</Priority>
-  <SubBlogEnabled>false</SubBlogEnabled>
+  <SubBlogEnabled>true</SubBlogEnabled>
   <Settings>
     <Delimiter>44</Delimiter>
     <Help>Converts BBCode to XHTML in the comments. Close tag is optional.</Help>

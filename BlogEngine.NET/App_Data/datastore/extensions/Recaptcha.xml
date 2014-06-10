@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Recaptcha">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Recaptcha">
   <AdminPage />
   <Author>&lt;a href="http://www.bloodforge.com"&gt;Bloodforge.com&lt;/a&gt;</Author>
   <Description>Settings for the Recaptcha control</Description>
   <Enabled>false</Enabled>
   <Priority>0</Priority>
-  <SubBlogEnabled>false</SubBlogEnabled>
+  <SubBlogEnabled>true</SubBlogEnabled>
   <Settings>
     <Delimiter>44</Delimiter>
     <Help>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widgets>
-  <widget id="413fe804-17f5-4268-b82b-4a2f59975020" title="RecentComments" showTitle="True">RecentComments</widget>
   <widget id="00f6155c-f4ff-48ca-afc0-2d872422b9d6" title="RecentPosts" showTitle="True">RecentPosts</widget>
-  <widget id="5ff66f94-1825-4026-b102-e733e4fa8a88" title="Newsletter" showTitle="True">Newsletter</widget>
+  <widget id="dee40f2b-78f4-4113-ab9a-1c6fc6ff1d1c" title="Page List" showTitle="True">Page List</widget>
+  <widget id="d4652198-2e01-44a3-b66e-9789bc22baaf" title="Administration" showTitle="True">Administration</widget>
+  <widget id="47361416-4020-4217-b859-f39f9f3f192c" title="Tag cloud" showTitle="True">Tag cloud</widget>
 </widgets>

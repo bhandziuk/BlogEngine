@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="StopForumSpam">
+<ManagedExtension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="StopForumSpam">
   <AdminPage />
   <Author>BlogEngine.NET</Author>
   <Description>Checks comment against stopforumspam.com spammers list.</Description>
