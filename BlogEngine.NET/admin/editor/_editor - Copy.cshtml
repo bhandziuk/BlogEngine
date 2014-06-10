@@ -31,7 +31,6 @@
         <button type="button" tabindex="-1" class="btn btn-default" data-edit="strikethrough" title="{{lbl.strikethrough}}"><i class="fa fa-strikethrough"></i></button>
         <button type="button" tabindex="-1" class="btn btn-default" data-edit="underline" title="{{lbl.underline}} (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></button>
     </div>
-
     <div class="btn-group">
         <button type="button" tabindex="-1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="{{lbl.colors}}"><i class="fa fa-tint"></i><span class="caret"></span></button>
         <ul class="dropdown-menu">
@@ -237,15 +236,15 @@
         <button type="button" tabindex="-1" class="btn btn-default" ng-click="toggleEditor($event)" title="{{lbl.fullScreen}}"><i class="fa fa-desktop"></i></button>
         <button type="button" tabindex="-1" class="btn btn-default" ng-click="source()" title="{{lbl.source}}"><i class="fa fa-code"></i></button>
     </div>
-    <div class="btn-group">
+	   <div class="btn-group">
             <button type="button" tabindex="-1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Insert Code Block"><i class="fa fa-heading"><b>#cb</b></i><span class="caret"></span></button>
         <ul class="dropdown-menu heading-item">
-            <li><a data-edit="insertHTML <pre class='brush: bash; toolbar: false;'>some code</pre>">Bash/shell</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: c-sharp; toolbar: false;'>some code</pre>">C#</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: plain; toolbar: false;'>some code</pre>">Plain Text</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: sql; toolbar: false;'>some code</pre>">SQL</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: vb; toolbar: false;'>some code</pre>">Visual Basic</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: xml; toolbar: false;'>some code</pre>">XML</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: bash'>some code</pre>">Bash/shell</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: c-sharp'>some code</pre>">C#</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: plain'>some code</pre>">Plain Text</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: sql'>some code</pre>">SQL</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: vb'>some code</pre>">Visual Basic</a></li>
+            <li><a data-edit="insertHTML <pre class='brush: xml'>some code</pre>">XML</a></li>
         </ul>
     </div>
     <div class="btn-group">
