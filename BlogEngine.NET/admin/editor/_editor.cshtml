@@ -240,23 +240,23 @@
     <div class="btn-group">
             <button type="button" tabindex="-1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Insert Code Block"><i class="fa fa-heading"><b>#cb</b></i><span class="caret"></span></button>
         <ul class="dropdown-menu heading-item">
-            <li><a data-edit="insertHTML <pre class='brush: bash; toolbar: false;'>some code</pre>">Bash/shell</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: c-sharp; toolbar: false;'>some code</pre>">C#</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: plain; toolbar: false;'>some code</pre>">Plain Text</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: sql; toolbar: false;'>some code</pre>">SQL</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: vb; toolbar: false;'>some code</pre>">Visual Basic</a></li>
-            <li><a data-edit="insertHTML <pre class='brush: xml; toolbar: false;'>some code</pre>">XML</a></li>
+            <li><a onclick="formatTextAsCodeBlock('bash')"">Bash/shell</a></li>
+            <li><a onclick="formatTextAsCodeBlock('c-sharp')"">C#</a></li>
+            <li><a onclick="formatTextAsCodeBlock('plain')"">Plain Text</a></li>
+            <li><a onclick="formatTextAsCodeBlock('sql')"">SQL</a></li>
+            <li><a onclick="formatTextAsCodeBlock('vb')">Visual Basic</a></li>
+            <li><a onclick="formatTextAsCodeBlock('xml')">XML</a></li>
         </ul>
     </div>
     <div class="btn-group">
             <button type="button" tabindex="-1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Insert Inline Code"><i class="fa fa-heading"><b>#i</b></i><span class="caret"></span></button>
         <ul class="dropdown-menu heading-item">
-            <li><a data-edit="insertHTML <code class='brush: bash'>some code</code>">Bash/shell</a></li>
-            <li><a data-edit="insertHTML <code class='brush: c-sharp'>some code</code>">C#</a></li>
-            <li><a data-edit="insertHTML <code class='brush: plain'>some code</code>">Plain Text</a></li>
-            <li><a data-edit="insertHTML <code class='brush: sql'>some code</code>">SQL</a></li>
-            <li><a data-edit="insertHTML  <code class='brush: vb'>some code</code>">Visual Basic</a></li>
-            <li><a data-edit="insertHTML <code class='brush: xml'>some code</code>">XML</a></li>
+            <li><a onclick="formatTextAsCodeInline('bash')"">Bash/shell</a></li>
+            <li><a onclick="formatTextAsCodeInline('c-sharp')"">C#</a></li>
+            <li><a onclick="formatTextAsCodeInline('plain')"">Plain Text</a></li>
+            <li><a onclick="formatTextAsCodeInline('sql')"">SQL</a></li>
+            <li><a onclick="formatTextAsCodeInline('vb')">Visual Basic</a></li>
+            <li><a onclick="formatTextAsCodeInline('xml')">XML</a></li>
         </ul>
     </div>
 </div>

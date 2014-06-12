@@ -152,7 +152,75 @@ function webRoot(url) {
         return result + url;
     }
 }
+function getSelectionHtml() {
+    var html = "";
+    if (typeof window.getSelection != "undefined") {
+        var sel = window.getSelection();
+        if (sel.rangeCount) {
+            var container = document.createElement("div");
+            for (var i = 0, len = sel.rangeCount; i < len; ++i) {
+                container.appendChild(sel.getRangeAt(i).cloneContents());
+            }
+            html = container.innerHTML;
+        }
+    } else if (typeof document.selection != "undefined") {
+        if (document.selection.type == "Text") {
+            html = document.selection.createRange().htmlText;
+        }
+    }
+    return html;
+}
+
+function insertHtmlAfterSelection(html) {
+    var sel, range, expandedSelRange, node;
+    if (window.getSelection) {
+        sel = window.getSelection();
+        if (sel.getRangeAt && sel.rangeCount) {
+            range = window.getSelection().getRangeAt(0);
+            expandedSelRange = range.cloneRange();
+            range.deleteContents();
+            //range.collapse(false);
+
+            // Range.createContextualFragment() would be useful here but is
+            // non-standard and not supported in all browsers (IE9, for one)
+            var el = document.createElement("div");
+            el.innerHTML = html;
+            var frag = document.createDocumentFragment(), node, lastNode;
+            while ((node = el.firstChild)) {
+                lastNode = frag.appendChild(node);
+            }
+            range.insertNode(frag);
+
+            // Preserve the selection
+            if (lastNode) {
+                expandedSelRange.setEndAfter(lastNode);
+                sel.removeAllRanges();
+                sel.addRange(expandedSelRange);
+            }
+        }
+    } else if (document.selection && document.selection.createRange) {
+        range = document.selection.createRange();
+        expandedSelRange = range.duplicate();
+        range.collapse(false);
+        range.pasteHTML(html);
+        expandedSelRange.setEndPoint("EndToEnd", range);
+        expandedSelRange.select();
+    }
+}
+
+function formatTextAsCodeBlock(brush) {
+    //TODO validate brush
+    var originalText = getSelectionHtml();
+    insertHtmlAfterSelection("<pre class=\"brush: " + brush + "; toolbar: false;\">" + originalText + "</pre>")
+}
+
+function formatTextAsCodeInline(brush) {
+    //TODO validate brush
+    var originalText = getSelectionHtml();
+    insertHtmlAfterSelection("<code class=\"brush: " + brush + "; toolbar: false;\">" + originalText + "</code>")
+}
 
 $(document).ready(function () {
     $("#txtTitle").focus();
 });
+

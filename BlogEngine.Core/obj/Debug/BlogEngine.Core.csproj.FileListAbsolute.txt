@@ -19,3 +19,10 @@ J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\bin\Debug\NuG
 J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.csprojResolveAssemblyReference.cache
 J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.dll
 J:\Brad's Documents\Handziuk.com\Source\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.pdb
+C:\Users\bch\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.XML
+C:\Users\bch\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.dll
+C:\Users\bch\BlogEngine\BlogEngine.Core\bin\Debug\BlogEngine.Core.pdb
+C:\Users\bch\BlogEngine\BlogEngine.Core\bin\Debug\Dynamic.dll
+C:\Users\bch\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.csprojResolveAssemblyReference.cache
+C:\Users\bch\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.dll
+C:\Users\bch\BlogEngine\BlogEngine.Core\obj\Debug\BlogEngine.Core.pdb
